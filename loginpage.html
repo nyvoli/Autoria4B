@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginstyle.css">
+    <script>
+        function validacao(event){
+        event.preventDefault();
+
+        const password = document.getElementById('senha').value;      
+        if (name =! "Gustavo Nascimento Martins") {
+            alert("Usuário  inválido");
+            return false;
+        } else if(senha =! "lasanha") {
+            alert("Senha incorreta")
+        }
+        window.location.href = "validado.html"; 
+        }
+    </script>
+
+    </head>
+<body>
+    <div class="main">
+        <div id="item">
+            <img src="https://i.pinimg.com/736x/e4/b7/03/e4b70385cdcda91c3abdacb293cfccc7.jpg" class="imagem">
+        </div>
+        <div id="item">
+            <p>Fazer Login</p>
+            <form id="formulário" onsubmit="validacao(event)" action="" method="post">
+                <div class="inputBox">
+                    <input type="text" name="name" id="name" class="inputUser" required> 
+                    <label for="name" class="labelInput">Nome</label><br>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required> 
+                    <label for="senha" class="labelInput">Senha</label><br>
+                     </div>
+                     <div class="inputBox">
+                    <label for="date" class="labelDate">Data de Nascimento</label>  
+                    <div id = inputD><input type="date" name="date" id="date" class="inputUser" required></div>  
+               </div>
+                    <input type="submit" id="botao" class="botao" value="Entrar" required>
+                    </form>
+                <t>Dica da senha: sua comida preferida</t>
+
+</body>
+</html>

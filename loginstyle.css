@@ -1,0 +1,105 @@
+.html{
+    background-color: #c9c9c9e5 ;
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+    height: 639px;
+    font-family: "Playfair Display";
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: #fcad80 50px 50px 100px -20px, #ff9c6d 50px 50px 100px -20px, #fc8053 50px 30px 60px -30px; }
+ .imagem{
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+p{
+    margin-top: 150px;
+    padding-left: 30px;
+    font-size: 60px;
+    color: #ee7008 ;
+}
+.botao{
+    margin-left: 60px;
+    font-size: 25px;
+    color: white;
+    background-image: linear-gradient(to right, #ee8229, #ee7008);
+    border: none;
+    border-radius: 5px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    font-weight: bold;
+    transition: .5s;  
+}
+.botao:hover{ 
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ee7008, #ee8229);
+}
+t{
+    margin-left: 70px;
+    color: #ee8229;
+}
+a:link{
+    color: #ee8229;
+}
+a:visited{
+    color: #ee7008;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    width: 380px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: grey;
+    border-color: #ee7008;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+}
+.inputUser:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    transition: 300ms;
+    border-color: #c45b05;
+    letter-spacing: 1px;
+}
+.labelInput{
+    position: absolute;
+    top: 11px;
+    left: 70px;
+    pointer-events: none;
+    transition: .3s;
+}
+.labelDate{
+    margin-left: 70px ;
+}
+.inputD:hover{
+    cursor: pointer;
+}
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{ 
+    top: -3px;
+    font-size: 15px;
+    color: #c45b05
+}
