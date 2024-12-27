@@ -1,46 +1,43 @@
-.html{
-    background-color: #c9c9c9e5 ;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    background-color: #1f5307 ;
 }
 .main{
+    background-color: white;
     position: absolute;
     left: 50%;
     top: 50%;
     display: flex;
     transform: translate(-50%,-50%);
-    height: 639px;
-    font-family: "Playfair Display";
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 7px;
-    box-shadow: #fcad80 50px 50px 100px -20px, #ff9c6d 50px 50px 100px -20px, #fc8053 50px 30px 60px -30px; }
- .imagem{
-    width: 450px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
- }
-.playfair-display {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+    height: 679px;
+    border-radius: 20px;
+
 }
+.imagem{
+    width: 450px;
+    border-radius: 10px;
+    margin: 20px;
+ }
 p{
-    margin-top: 150px;
-    padding-left: 30px;
+    margin-top: 120px;
+    padding-left: 100px;
     font-size: 60px;
     color: #ee7008 ;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 .botao{
-    margin-left: 60px;
+    margin-left: 70px;
     font-size: 25px;
     color: white;
     background-image: linear-gradient(to right, #ee8229, #ee7008);
     border: none;
     border-radius: 5px;
-    padding-left: 160px;
-    padding-right: 160px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 182px;
+    padding-right: 182px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     margin-bottom: 10px;
     margin-right: 40px;
     font-weight: bold;
@@ -51,8 +48,11 @@ p{
     background-image: linear-gradient(to right, #ee7008, #ee8229);
 }
 t{
-    margin-left: 70px;
+    margin-left: 78px;
     color: #ee8229;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 a:link{
     color: #ee8229;
@@ -64,36 +64,43 @@ a:visited{
     position: relative;
 }
 .inputUser{
-    width: 380px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    width: 420px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-    font-size: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
     margin-bottom: 30px;
-    color: grey;
+    color: #c45b05;
     border-color: #ee7008;
     border-radius: 5px;
     letter-spacing: 1px;
     outline: none;
+    border: solid 3px;
 }
 .inputUser:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
     transition: 300ms;
-    border-color: #c45b05;
+    border-color: #ff943d;
     letter-spacing: 1px;
 }
 .labelInput{
     position: absolute;
-    top: 11px;
-    left: 70px;
+    top: 15px;
+    left: 78px;
     pointer-events: none;
     transition: .3s;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: #c45b05;
 }
 .labelDate{
-    margin-left: 70px ;
+    margin-left: 78px ;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: #c45b05
 }
 .inputD:hover{
     cursor: pointer;
@@ -101,5 +108,5 @@ a:visited{
 .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{ 
     top: -3px;
     font-size: 15px;
-    color: #c45b05
+    color: #f2a260
 }
