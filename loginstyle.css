@@ -9,33 +9,33 @@ html{
     top: 50%;
     display: flex;
     transform: translate(-50%,-50%);
-    height: 679px;
+    height: 470px;
     border-radius: 20px;
 
 }
 .imagem{
-    width: 450px;
+    width: 300px;
     border-radius: 10px;
     margin: 20px;
  }
 p{
-    margin-top: 120px;
+    margin-top: 65px;
     padding-left: 80px;
-    font-size: 60px;
+    font-size: 40px;
     color: #ee7008 ;
     font-family: "Poppins", serif;
     font-weight: 800;
     font-style: normal;
 }
 .botao{
-    margin-left: 70px;
+    margin-left: 60px;
     font-size: 25px;
     color: white;
     background-image: linear-gradient(to right, #ee8229, #ee7008);
     border: none;
     border-radius: 5px;
-    padding-left: 182px;
-    padding-right: 182px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 10px;
@@ -48,7 +48,7 @@ p{
     background-image: linear-gradient(to right, #ee7008, #ee8229);
 }
 t{
-    margin-left: 78px;
+    margin-left: 50px;
     color: #ee8229;
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -64,32 +64,30 @@ a:visited{
     position: relative;
 }
 .inputUser{
-    width: 420px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 20px;
-    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    margin-bottom: 20px;
     color: #ff943d;
     border-color: #ee7008;
     border-radius: 5px;
-    letter-spacing: 1px;
     outline: none;
-    border: solid 3px;
+    border: solid 2px;
 }
 .inputUser:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
     transition: 300ms;
     border-color: #c45b05;
-    letter-spacing: 1px;
 }
 .labelInput{
     position: absolute;
-    top: 15px;
-    left: 78px;
+    top: 10px;
+    left: 60px;
     pointer-events: none;
     transition: .3s;
     font-family: "Poppins", serif;
@@ -97,7 +95,7 @@ a:visited{
     color: #c45b05;
 }
 .labelDate{
-    margin-left: 78px ;
+    margin-left: 60px ;
     font-family: "Poppins", serif;
     font-weight: 500;
     color: #c45b05
