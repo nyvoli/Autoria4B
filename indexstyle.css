@@ -1,55 +1,77 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-  }
-  
-  .video-container {
-    position: relative; /* Torna o contêiner do vídeo o ponto de referência */
-    width: 50%;
-    height: 100%;
-  }
-  
-  .main {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  video {
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.5s;
-  }
-  
-  .overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor escura semitransparente */
-    transition: opacity 1s;
-  }
-  
-  .video-container:hover .overlay {
-    opacity: 0; /* Remove a camada escura quando o cursor estiver sobre o vídeo */
-  }
-  
-  .video-container:hover video {
-    opacity: 1; /* Deixa o vídeo visível */
-    cursor: pointer;
-  }
-  
-  .text {
-    position: absolute; /* Permite que o texto fique sobre o vídeo */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste fino para o centro exato */
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    font-style: normal;
-    color: white;
-    font-size: 2rem; /* Tamanho do texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
-  }
-  
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede o scroll horizontal */
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+}
+.video-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  opacity: 1; /* O vídeo vai começar com opacidade normal */
+}
+
+.overlay {
+  position: absolute; /* Colocando a sobreposição sobre o vídeo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Filtro escuro semitransparente */
+  opacity: 1; /* Inicialmente a sobreposição é visível (escurecendo o vídeo) */
+  transition: opacity 0.8s ease; /* Transição suave */
+}
+
+.video-container:hover .overlay {
+  opacity: 0; /* Remove a camada escura quando o cursor estiver sobre o vídeo */
+}
+
+.video-container:hover video {
+  opacity: 1; /* O vídeo se torna visível novamente */
+  cursor: pointer; /* Muda o cursor para indicar que é interativo */
+}
+
+.text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: white;
+  font-size: 2rem;
+}
+
+t {
+  font-size: 1rem;
+  text-decoration: underline;
+  text-align: center;
+}
+t:hover{
+  cursor: pointer;
+}
+
+.principal {
+  position: fixed; /* Fixa o texto na tela */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: white;
+  font-size: 6rem;
+}
+
