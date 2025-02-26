@@ -19,7 +19,7 @@
           <source src="https://diorama.dam-broadcast.com/pm_11872_949_949474-xnnovsp61t-1080.mp4" type="video/mp4">
           Seu navegador não suporta o formato de vídeo.
         </video>
-        <div class="text">Moda & Acessórios <br><a href="moda.html"><t>Descobrir</t></a></div> <!-- Texto sobre o primeiro vídeo -->
+        <div class="text">Moda & Acessórios <br><a href="moda.html"><t>Descobrir</t></a></div> 
       </div>
 
       <div class="video-container">
@@ -29,8 +29,7 @@
           <source src="https://diorama.dam-broadcast.com/pm_11872_987_987589-6r8bfhg0we-1080.mp4" type="video/mp4">
           Seu navegador não suporta o formato de vídeo.
         </video>
-        <div class="text">Beleza & Cosméticos <br> <a href="beleza.html"><t>Descobrir</t></a></div> <!-- Texto sobre o segundo vídeo -->
-      </div>
+        <div class="text">Beleza & Cosméticos <br> <a href="beleza.html"><t>Descobrir</t></a></div> 
       <div class="principal">DIOR</div>
     </div>
 
@@ -38,17 +37,17 @@
       const video1 = document.getElementById('vid1');
       const video2 = document.getElementById('vid2');
 
-      // Função para reproduzir o vídeo
+
       function playVideo(video) {
         video.play();
       }
 
-      // Função para pausar o vídeo
+     
       function pauseVideo(video) {
         video.pause();
       }
 
-      // Evento para reproduzir o vídeo quando o cursor estiver em cima
+  
       video1.addEventListener('mouseover', () => {
         playVideo(video1);
       });
@@ -57,7 +56,7 @@
         playVideo(video2);
       });
 
-      // Evento para pausar o vídeo quando o cursor sair
+     
       video1.addEventListener('mouseout', () => {
         pauseVideo(video1);
       });
