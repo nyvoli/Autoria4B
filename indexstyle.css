@@ -60,6 +60,7 @@ t {
   font-size: 1rem;
   text-decoration: underline;
   text-align: center;
+  color: white;
 }
 t:hover{
   cursor: pointer;
@@ -75,4 +76,6 @@ t:hover{
   color: white;
   font-size: 6rem;
 }
-
+a:visited, a:vi{
+  color: white;
+}

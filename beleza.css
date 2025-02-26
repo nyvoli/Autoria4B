@@ -36,3 +36,32 @@ body{
     display: flex;
     flex-direction: row;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 33%;
+    margin: 0.01px;
+
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.texto{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+   
+}
+t{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+}
